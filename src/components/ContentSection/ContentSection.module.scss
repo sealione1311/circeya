@@ -61,6 +61,7 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 110%;
+
     @media screen and (max-width: 769px) {
       margin-bottom: 20px;
       font-size: 24px;
@@ -90,6 +91,10 @@
     height: 480px;
     margin-bottom: 100px;
 
+    @media screen and (max-width: 1280px) {
+      min-width: 42vw;
+    }
+
     @media screen and (max-width: 769px) {
       margin-bottom: 40px;
       height: 370px;
@@ -100,6 +105,7 @@
 
 .rightPhotoSection {
   padding-left: var(--padding);
+
   @media screen and (max-width: 769px) {
     padding-left: 0;
     flex-direction: column-reverse;
@@ -108,6 +114,10 @@
   .imgContainer {
     width: 31vw;
     height: 411px;
+
+    @media screen and (max-width: 1280px) {
+      min-width: 42vw;
+    }
 
     @media screen and (max-width: 769px) {
       height: 360px;
