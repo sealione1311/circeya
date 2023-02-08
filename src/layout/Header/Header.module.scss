@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 var(--padding);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, #464541 0%, #010101 100%);
+}
+
+.logo {
+  width: 213.27px;
+  height: 36px;
+
+  @media screen and (max-width: 767px) {
+    width: 118.48px;
+    height: 20px;
+  }
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tel {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.telIcon {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}

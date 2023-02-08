@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from "./layout/Layout";
+import ContentSection from './components/ContentSection/ContentSection';
+import {lowerContentBlock, upperContentBlock} from '../src/API/API';
+import ScrollSection from './components/scrollSection/ScrollSection';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Layout>
+                <ContentSection photo1={upperContentBlock.img1}
+                                photo2={upperContentBlock.img2}
+                                title={upperContentBlock.title}
+                                subtitle={upperContentBlock.subtitle}
+                                paragraph={upperContentBlock.paragraph}
+                />
+                <ScrollSection/>
+                <ContentSection photo1={lowerContentBlock.img3}
+                                photo2={lowerContentBlock.img4}
+                                title={lowerContentBlock.title}
+                                subtitle={lowerContentBlock.subtitle}
+                                paragraph={lowerContentBlock.paragraph}
+                />
+            </Layout>
+        </div>
+    );
 }
 
 export default App;

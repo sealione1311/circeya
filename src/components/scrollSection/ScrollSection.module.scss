@@ -1,0 +1,64 @@
+.scrollSection {
+  margin-bottom: 160px;
+
+  @media screen and (max-width: 769px) {
+    margin-bottom: 70px;
+  }
+}
+
+.sliderWrapper {
+  width: 100vw;
+
+  .scrollTitle {
+    margin-bottom: 123px;
+    font-family: var(--htag-font);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 53px;
+    padding-left: var(--padding);
+
+    @media screen and (max-width: 769px) {
+      text-align: left;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 31px;
+      margin-bottom: 56px;
+    }
+  }
+}
+
+.stickyWrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  overflow: hidden;
+
+  @media screen and (max-width: 769px) {
+    top: 20vh
+  }
+}
+
+.slider {
+  max-height: 488px;
+  position: relative;
+  display: flex;
+  gap: 1vw;
+
+  @media screen and (max-width: 769px) {
+    max-height: 600px;
+  }
+
+  .photoWrapper {
+    min-width: 320px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .img {
+    max-width: 320px;
+    max-height: 488px;
+    object-fit: contain;
+  }
+}
+

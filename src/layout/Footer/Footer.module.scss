@@ -1,0 +1,14 @@
+.footer {
+  grid-area: footer;
+  min-height: 200px;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.copyright {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+}
