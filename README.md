@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+#Выполнена адаптивная верстка, сгенерированы фавиконки, добавлен горизонтальный скролл для галереи фотографий на экраны более 821px и свайп для экранов поменьше.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
